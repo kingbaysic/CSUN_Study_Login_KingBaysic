@@ -6,8 +6,13 @@ import android.widget.Button;
 import android.content.Intent;
 import android.view.View;
 
+import com.example.mylogin.databinding.ActivityMainBinding;
+
 public class MainActivity extends AppCompatActivity {
     public Button button;
+
+
+
 
 
     @Override
