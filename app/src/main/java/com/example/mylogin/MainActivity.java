@@ -5,30 +5,43 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.content.Intent;
 import android.view.View;
+import android.widget.EditText;
+import android.widget.TextView;
 
 import com.example.mylogin.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
-    public Button button;
+    public Button LoginButton;
+    public TextView RegisterButton;
+
 
 
 
 
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        LoginButton = (Button) findViewById(R.id.btn);
+        RegisterButton =(TextView) findViewById(R.id.need_new_account_link);
 
-        button = (Button) findViewById(R.id.btn);
-
-        button.setOnClickListener(new View.OnClickListener() {
+        RegisterButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View V) {
-                Intent intent = new Intent(MainActivity.this, HomePage.class);
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Registration.class);
                 startActivity(intent);
-
             }
         });
+
+        LoginButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, HomePage.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }

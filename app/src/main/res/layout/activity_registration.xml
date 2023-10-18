@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -56,23 +55,23 @@
                 android:textColor="@color/my_primary"
                 android:textSize="32dp"
                 android:textStyle="bold"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Please login with your CSUN student account"
-            android:alpha="0.7"
-            android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please create your CSUN student account"
+                android:alpha="0.7"
+                android:textStyle="bold"/>
             <View
                 android:layout_width="wrap_content"
                 android:layout_height="30dp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Please login with your CSUN email"
+                android:text="Please create with your CSUN email"
                 android:alpha="0.7"
                 android:textStyle="bold"/>
             <EditText
-                android:id="@+id/login_email"
+                android:id="@+id/register_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress"
@@ -84,49 +83,35 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Please enter your password"
+                android:text="Please create your password"
                 android:alpha="0.7"
                 android:textStyle="bold"/>
             <EditText
-                android:id="@+id/login_password"
+                android:id="@+id/register_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
                 android:drawableEnd="@drawable/password_icon"/>
-            <Button
-                android:id="@+id/login_button"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/login_password"/>
-
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-
                 <TextView
-                    android:id="@+id/need_new_account_link"
+                    android:id="@+id/already_have_account_link"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Create New Account"
-                    android:layout_centerVertical="true"
-                    android:alpha="0.7"/>
-
-                <TextView
-                    android:id="@+id/forgot_password_link"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="I forgot my password"
+                    android:text="Already have an account?"
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"/>
             </RelativeLayout>
+
             <View
                 android:layout_width="wrap_content"
                 android:layout_height="10dp"/>
             <com.google.android.material.button.MaterialButton
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:text="LOGIN"
-                android:id="@+id/btn"
+                android:text="Create Account"
+                android:id="@+id/reg_btn"
                 android:textColor="@color/white"
                 android:textStyle="bold"
                 app:cornerRadius="32dp"/>
@@ -135,11 +120,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="10dp"/>
 
-
         </LinearLayout>
-
-
-
 
     </androidx.cardview.widget.CardView>
 
