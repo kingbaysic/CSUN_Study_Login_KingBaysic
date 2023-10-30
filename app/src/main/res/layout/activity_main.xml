@@ -93,11 +93,7 @@
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
                 android:drawableEnd="@drawable/password_icon"/>
-            <Button
-                android:id="@+id/login_button"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/login_password"/>
+
 
             <RelativeLayout
                 android:layout_width="match_parent"

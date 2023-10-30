@@ -50,16 +50,15 @@ public class HomePage extends AppCompatActivity implements NavigationView.OnNavi
 
         bottomNavigationView = findViewById(R.id.bottom_navigation);
         bottomNavigationView.setBackground(null);
-
         bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {//bottom nav menu
                 int itemId = item.getItemId();
                 if(itemId==R.id.home) {
                     openFragment(new HomeFragment());
                     return true;
-                } else if  (itemId==R.id.settings){
-                    openFragment(new SettingsFragment());
+                } else if  (itemId==R.id.search){
+                    openFragment(new SearchFragment());
                     return true;
                 }else if  (itemId==R.id.profile) {
                     openFragment(new ProfileFragment());
@@ -81,6 +80,7 @@ public class HomePage extends AppCompatActivity implements NavigationView.OnNavi
     }
 
     @Override
+    //navigation drawer
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         int itemId = item.getItemId();
         if(itemId==R.id.nav_message){
