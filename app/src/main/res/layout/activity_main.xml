@@ -56,12 +56,12 @@
                 android:textColor="@color/my_primary"
                 android:textSize="32dp"
                 android:textStyle="bold"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Please login with your CSUN student account"
-            android:alpha="0.7"
-            android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please login with your CSUN student account"
+                android:alpha="0.7"
+                android:textStyle="bold"/>
             <View
                 android:layout_width="wrap_content"
                 android:layout_height="30dp"/>
@@ -94,7 +94,6 @@
                 android:inputType="textPassword"
                 android:drawableEnd="@drawable/password_icon"/>
 
-
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -115,6 +114,7 @@
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"/>
             </RelativeLayout>
+
             <View
                 android:layout_width="wrap_content"
                 android:layout_height="10dp"/>
@@ -131,15 +131,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="10dp"/>
 
-
         </LinearLayout>
 
-
-
-
     </androidx.cardview.widget.CardView>
-
-
-
 
 </RelativeLayout>
