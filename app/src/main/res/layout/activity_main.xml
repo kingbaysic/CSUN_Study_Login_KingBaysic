@@ -86,13 +86,16 @@
                 android:layout_height="wrap_content"
                 android:text="Please enter your password"
                 android:alpha="0.7"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                />
             <EditText
                 android:id="@+id/login_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
-                android:drawableEnd="@drawable/password_icon"/>
+                android:longClickable="false"
+                android:drawableEnd="@drawable/password_icon"
+                />
 
             <RelativeLayout
                 android:layout_width="match_parent"
