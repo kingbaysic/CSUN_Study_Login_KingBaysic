@@ -91,6 +91,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
+                android:longClickable="false"
                 android:drawableEnd="@drawable/password_icon"/>
             <RelativeLayout
                 android:layout_width="match_parent"
