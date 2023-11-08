@@ -7,7 +7,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/my_primary"
-    tools:context=".HomeFragment">
+    tools:context=".HomeFragment"
+    >
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -26,19 +27,48 @@
             android:layout_height="match_parent"
             android:orientation="horizontal">
 
-            <ImageButton
-                android:id="@+id/imageButton1"
-                android:layout_width="100dp"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:src="@drawable/baseline_message_24" />
+                android:orientation="vertical"
+                android:layout_gravity="center">
 
-            <ImageButton
-                android:id="@+id/imageButton2"
-                android:layout_width="100dp"
+                <ImageButton
+                    android:id="@+id/mathButton"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/math_123" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Math 482"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:src="@drawable/baseline_message_24" />
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
+                <ImageButton
+                    android:id="@+id/historyButton"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/history_book" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="History 380"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
 
             <ImageButton
                 android:id="@+id/imageButton3"

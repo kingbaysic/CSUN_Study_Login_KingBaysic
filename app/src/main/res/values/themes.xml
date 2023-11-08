@@ -9,14 +9,11 @@
         <item name="colorOnPrimary">@color/black</item>
 
 
-
-
-
     </style>
 
     <style name="Theme.MyLogin" parent="Base.Theme.MyLogin" />
 
-    <style name= "ThemeOverlay.AppCompat.navTheme">
-        <item name = "colorPrimary">@color/my_primary</item>
+    <style name="ThemeOverlay.AppCompat.navTheme">
+        <item name="colorPrimary">@color/my_primary</item>
     </style>
 </resources>

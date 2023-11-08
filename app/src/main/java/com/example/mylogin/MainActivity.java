@@ -3,6 +3,7 @@ package com.example.mylogin;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
 import android.widget.Button;
@@ -16,11 +17,6 @@ import com.example.mylogin.databinding.ActivityMainBinding;
 public class MainActivity extends AppCompatActivity {
     public Button LoginButton;
     public TextView RegisterButton;
-
-
-
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -46,5 +42,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        FragmentTransaction fragmentTransaction=getSupportFragmentManager().beginTransaction();
+
+        fragmentTransaction.add(R.id.fragment_container,new MathGroupFragment());
+        fragmentTransaction.add(R.id.fragment_container,new HistoryGroupFragment());
+        //fragmentTransaction.commit();
     }
 }
