@@ -4,7 +4,7 @@ plugins {
 
 android {
     namespace = "com.example.mylogin"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.mylogin"
@@ -38,10 +38,10 @@ android {
 dependencies {
 
     implementation("androidx.appcompat:appcompat:1.6.1")
-    implementation("com.google.android.material:material:1.9.0")
+    implementation("com.google.android.material:material:1.10.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
-    implementation("androidx.navigation:navigation-fragment:2.5.3")
-    implementation("androidx.navigation:navigation-ui:2.5.3")
+    implementation("androidx.navigation:navigation-fragment:2.7.5")
+    implementation("androidx.navigation:navigation-ui:2.7.5")
     implementation(files("/Users/lancebaysic/Desktop/CSUN_Study_Login_KingBaysic/app/libs/jtds-1.3.1.jar"))
     implementation(files("/Users/lancebaysic/Desktop/CSUN_Study_Login_KingBaysic/app/libs/mssql-jdbc-12.4.1.jre11.jar"))
     testImplementation("junit:junit:4.13.2")

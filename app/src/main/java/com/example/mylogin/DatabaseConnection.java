@@ -10,7 +10,9 @@ public class DatabaseConnection {
 
     // JDBC URL, username, and password of SQL Server
     private static final String JDBC_URL = "jdbc:jtds:sqlserver://csunstudy-db.cbef1ecg07tv.us-west-1.rds.amazonaws.com:1433/csunstudy;ssl=true;sslfactory=org.jtds.ssl.MD5TdsTlsSocketFactory";
+
     private static final String USERNAME = "cjjk";
+
     private static final String PASSWORD = "comp490fall2023";
 
     @SuppressLint("NewApi")
@@ -19,11 +21,9 @@ public class DatabaseConnection {
         try {
             // Register the jTDS driver
             Class.forName("net.sourceforge.jtds.jdbc.Driver");
-            System.out.println("made it here 1");
             // Create the connection
             connection = DriverManager.getConnection(JDBC_URL, USERNAME, PASSWORD);
-            System.out.println("made it here 2");
-
+            System.out.println("MADE IT HERE");
             if (connection != null) {
                 System.out.println("Connected to the database.");
             }
@@ -35,7 +35,6 @@ public class DatabaseConnection {
             System.out.println("jTDS driver not found. Make sure to add the jTDS driver JAR to your project.");
             System.err.println("jTDS driver not found. Make sure to add the jTDS driver JAR to your project.");
         }
-        System.out.println("made it here 3");
         return connection;
     }
 
